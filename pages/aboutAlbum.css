@@ -1,0 +1,324 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto", sans-serif;
+  line-height: 1.4;
+  text-decoration-line: none;
+
+  user-select: none;
+
+  box-sizing: border-box;
+}
+
+/*   background-color: rgb(165, 172, 216); */
+/*   background-color: rgb(143, 152, 212);*/
+
+/*   background-color: rgb(117, 200, 255); */
+
+
+/* --- Header -------------------------------------------------------------- */
+
+.header {
+  background-color: rgb(47, 109, 245);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header .nav {
+  padding: 15px 0px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.header .nav .logo a {
+  font-size: 32px;
+  font-weight: 600;
+  color: white;
+}
+
+.header .nav .logo a:hover {
+  border-bottom: 2px solid rgb(255, 255, 255);
+  transition: 0.1s ease-in-out;
+}
+
+.header .nav ol {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.header .nav ol li {
+  color: white;
+  border-bottom: 2px solid transparent;
+  transition: 0.2s ease-in;
+}
+
+.header .nav ol li:hover {
+  border-bottom: 2px solid rgb(255, 255, 255);
+  transition: 0.2s ease-in;
+}
+
+/* --- Main -------------------------------------------------------------- */
+
+.main .intro-section {
+  /* background-image: url(../img/The_Beatles_Photo3.png); */
+  background-size: auto;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  color: black;
+  font-size: 30px;
+  place-items: center;
+  text-align: center;
+
+  /* position: relative; */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.main .intro-section .container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* --- */
+
+.main .about-section {
+  /* padding-top: 50px; */
+  background-color: rgb(47, 109, 245);
+  /* height: 1200px; */
+  justify-content: center;
+}
+
+.main .about-section .container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.main .about-section .container video {
+  height: 450px;
+  margin-bottom: 40px;
+  border: 2px black solid;
+}
+
+/* --- */
+
+.main .albums-section {
+  padding-top: 60px;
+  display: grid;
+  place-items: center;
+  gap: 50px;
+  text-align: center;
+  /* margin-bottom: 50px; */
+
+  /* width: 100%;
+  height: 100%; */
+}
+
+.main .albums-section h3 {
+  margin: 50px;
+  font-size: 50px;
+  color: rgb(47, 109, 245);
+}
+
+.main .albums-section .albumsOll {
+  /* width: 950px; */
+  height: 100%;
+}
+
+/* albums sharqer  ----------------------- */
+.main .albums-section .albumsOll .album {
+  height: auto;
+  width: 400px;
+  /* margin-bottom: 20px; */
+  background-color: rgb(255, 255, 255);
+
+  padding: 0;
+  margin: 15px 22px;
+  border: rgb(95, 94, 94) 1px solid;
+  box-shadow: 3px 5px 66px rgba(0, 0, 0, 0.20), 0 2px 10px rgba(0, 0, 0, 0.12);
+
+}
+
+/* --- */
+
+.main .albums-section .albumsOll .album .album-name {
+  font-size: 25px;
+  background-color: rgb(47, 109, 245);
+  /* padding: 15px 30px; */
+  line-height: 1.2;
+  padding: 12px 15px;
+  color: #ffffff;
+
+  align-content: space-around;
+  display: grid;
+  height: 135px;
+}
+
+.main .albums-section .albumsOll .album img {
+  width: 100%;
+  height: auto;
+  border: rgb(95, 94, 94) solid 1px;
+}
+
+.main .albums-section .albumsOll .album .album-content {
+  line-height: 1.2;
+  padding: 12px 15px;
+  text-align: Left;
+}
+
+.main .albums-section .albumsOll .album a img {
+  width: 40px;
+  height: auto;
+  border: none;
+  margin-left: 10px;
+}
+
+.main .albums-section .albumsOll .album a {
+  display: inline-flex;
+
+  font-size: 25px;
+  background-color: rgb(47, 109, 245);
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  /* display: inline-block; */
+  margin-bottom: 20px;
+}
+
+.main .albums-section .albumsOll .album a:hover {
+  background-color: rgb(86, 109, 158);
+}
+
+/* films section */
+
+.main .films-section {
+  /* padding-top: 60px; */
+  display: grid;
+  place-items: center;
+  /* gap: 50px; */
+  text-align: center;
+  margin-bottom: 50px;
+  color: rgb(47, 109, 245);
+}
+
+.main .films-section .films {
+  display: flex;
+  margin: 50px;
+}
+
+.main .films-section .films div {
+  margin: 0px 20px;
+  border: rgb(95, 94, 94) 1px solid;
+  box-shadow: 3px 5px 66px rgba(0, 0, 0, 0.20), 0 2px 10px rgba(0, 0, 0, 0.12);
+}
+
+.main .films-section .films div img {
+  height: 350px;
+}
+
+.main .films-section .films div a {
+  color: rgb(1, 54, 168);
+  ;
+}
+
+.main .films-section .films div a:hover {
+  border-bottom: 2px solid rgb(47, 109, 245);
+  ;
+  transition: 0.1s ease-in;
+}
+
+/* footer - ---------------------------- */
+
+.footer .footer-upper {
+  background-color: rgb(47, 109, 245);
+  padding: 20px;
+}
+
+.footer .footer-upper p {
+  justify-content: center;
+  display: grid;
+
+  margin-bottom: 25px;
+  color: white;
+  font-size: 19px;
+}
+
+.footer .footer-upper .container {
+  display: flex;
+  color: white;
+  justify-content: space-evenly;
+}
+
+.footer .footer-upper .container h4 {
+  /* padding-bottom: 10px; */
+  border-bottom: 2px solid white;
+  margin-bottom: 10px;
+}
+
+.footer .footer-upper .container .footer-links ol li {
+  /* padding-bottom: 10px; */
+  /* border-bottom: 2px solid white; */
+  /* margin-bottom: 10px; */
+  color: white;
+  display: inline;
+
+  border-bottom: 2px solid transparent;
+  transition: 0.2s ease-in;
+}
+
+.footer .footer-upper .container .footer-links ol li:hover {
+  border-bottom: 2px solid rgb(255, 255, 255);
+  transition: 0.2s ease-in;
+}
+
+/* --- */
+
+.footer .footer-lower {
+  background-color: rgb(28, 90, 223);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+
+/* --- */
+
+/* [class*="album-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .albums-section {width: 8.33%;}
+  .albums-section {width: 16.66%;}
+  .albums-section {width: 25%;}
+  .albums-section {width: 33.33%;}
+  .albums-section {width: 41.66%;}
+  .albums-section {width: 50%;}
+  .albums-section {width: 58.33%;}
+  .albums-section {width: 66.66%;}
+  .albums-section {width: 75%;}
+  .albums-section {width: 83.33%;}
+  .albums-section {width: 91.66%;}
+  .albums-section {width: 100%;}
+} */
