@@ -1,24 +1,14 @@
 * {
   margin: 0;
   padding: 0;
-
   font-family: "Roboto", sans-serif;
   line-height: 1.4;
   text-decoration-line: none;
-
   user-select: none;
-
   box-sizing: border-box;
 }
 
-/*   background-color: rgb(165, 172, 216); */
-/*   background-color: rgb(143, 152, 212);*/
-
-/*   background-color: rgb(117, 200, 255); */
-
-
 /* --- Header -------------------------------------------------------------- */
-
 .header {
   background-color: rgb(47, 109, 245);
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
@@ -71,10 +61,7 @@
 }
 
 /* --- Main -------------------------------------------------------------- */
-
 .main .intro-section {
-  /* background-image: url(../img/The_Beatles_Photo3.png); */
-  background-size: auto;
   width: 100%;
   height: 100%;
   display: grid;
@@ -82,8 +69,6 @@
   font-size: 30px;
   place-items: center;
   text-align: center;
-
-  /* position: relative; */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -95,12 +80,13 @@
   gap: 30px;
 }
 
-/* --- */
+.main .intro-section img {
+  max-width: 100%;
+  height: auto;
+}
 
 .main .about-section {
-  /* padding-top: 50px; */
   background-color: rgb(47, 109, 245);
-  /* height: 1200px; */
   justify-content: center;
 }
 
@@ -119,18 +105,12 @@
   border: 2px black solid;
 }
 
-/* --- */
-
 .main .albums-section {
   padding-top: 60px;
   display: grid;
   place-items: center;
   gap: 50px;
   text-align: center;
-  /* margin-bottom: 50px; */
-
-  /* width: 100%;
-  height: 100%; */
 }
 
 .main .albums-section h3 {
@@ -140,34 +120,25 @@
 }
 
 .main .albums-section .albumsOll {
-  /* width: 950px; */
   height: 100%;
 }
 
-/* albums sharqer  ----------------------- */
 .main .albums-section .albumsOll .album {
   height: auto;
   width: 400px;
-  /* margin-bottom: 20px; */
   background-color: rgb(255, 255, 255);
-
   padding: 0;
   margin: 15px 22px;
   border: rgb(95, 94, 94) 1px solid;
   box-shadow: 3px 5px 66px rgba(0, 0, 0, 0.20), 0 2px 10px rgba(0, 0, 0, 0.12);
-
 }
-
-/* --- */
 
 .main .albums-section .albumsOll .album .album-name {
   font-size: 25px;
   background-color: rgb(47, 109, 245);
-  /* padding: 15px 30px; */
   line-height: 1.2;
   padding: 12px 15px;
   color: #ffffff;
-
   align-content: space-around;
   display: grid;
   height: 135px;
@@ -194,14 +165,12 @@
 
 .main .albums-section .albumsOll .album a {
   display: inline-flex;
-
   font-size: 25px;
   background-color: rgb(47, 109, 245);
   color: white;
   padding: 14px 25px;
   text-align: center;
   text-decoration: none;
-  /* display: inline-block; */
   margin-bottom: 20px;
 }
 
@@ -210,12 +179,9 @@
 }
 
 /* films section */
-
 .main .films-section {
-  /* padding-top: 60px; */
   display: grid;
   place-items: center;
-  /* gap: 50px; */
   text-align: center;
   margin-bottom: 50px;
   color: rgb(47, 109, 245);
@@ -238,17 +204,14 @@
 
 .main .films-section .films div a {
   color: rgb(1, 54, 168);
-  ;
 }
 
 .main .films-section .films div a:hover {
   border-bottom: 2px solid rgb(47, 109, 245);
-  ;
   transition: 0.1s ease-in;
 }
 
-/* footer - ---------------------------- */
-
+/* footer */
 .footer .footer-upper {
   background-color: rgb(47, 109, 245);
   padding: 20px;
@@ -257,7 +220,6 @@
 .footer .footer-upper p {
   justify-content: center;
   display: grid;
-
   margin-bottom: 25px;
   color: white;
   font-size: 19px;
@@ -270,18 +232,13 @@
 }
 
 .footer .footer-upper .container h4 {
-  /* padding-bottom: 10px; */
   border-bottom: 2px solid white;
   margin-bottom: 10px;
 }
 
 .footer .footer-upper .container .footer-links ol li {
-  /* padding-bottom: 10px; */
-  /* border-bottom: 2px solid white; */
-  /* margin-bottom: 10px; */
   color: white;
   display: inline;
-
   border-bottom: 2px solid transparent;
   transition: 0.2s ease-in;
 }
@@ -291,8 +248,6 @@
   transition: 0.2s ease-in;
 }
 
-/* --- */
-
 .footer .footer-lower {
   background-color: rgb(28, 90, 223);
   padding: 20px;
@@ -301,24 +256,152 @@
   color: white;
 }
 
-
-/* --- */
-
-/* [class*="album-"] {
-  width: 100%;
+.read-more-check {
+  display: none;
+}
+.read-more-label {
+  display: none; 
+}
+.more-content {
+  display: block;
 }
 
-@media only screen and (min-width: 768px) {
-  .albums-section {width: 8.33%;}
-  .albums-section {width: 16.66%;}
-  .albums-section {width: 25%;}
-  .albums-section {width: 33.33%;}
-  .albums-section {width: 41.66%;}
-  .albums-section {width: 50%;}
-  .albums-section {width: 58.33%;}
-  .albums-section {width: 66.66%;}
-  .albums-section {width: 75%;}
-  .albums-section {width: 83.33%;}
-  .albums-section {width: 91.66%;}
-  .albums-section {width: 100%;}
-} */
+@media (max-width: 768px) {
+  .header .nav {
+    padding: 15px 25px !important;
+    position: relative;
+  }
+  .menu-icon {
+    display: block;
+    font-size: 40px;
+    cursor: pointer;
+    color: white;
+  }
+  .header .nav .nav-menu {
+    display: none; 
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgb(47, 109, 245);
+    flex-direction: column;
+    padding: 20px;
+    z-index: 200;
+  }
+  .menu-checkbox:checked ~ .nav-menu {
+    display: flex;
+  }
+  .separator {
+    display: none;
+  }
+  .header .nav ol {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+  .header .nav ol li {
+    font-size: 18px;
+  }
+
+  .main .intro-section {
+    height: 100px;
+    min-height: 120px;
+    padding: 0; 
+    background-size: 100% auto; 
+    background-position: top center; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main .intro-section .container {
+    padding: 0;
+    gap: 0;
+  }
+  .main .intro-section img {
+    width: 100%;
+    height: auto;
+  }
+
+  .main .about-section .container h2 {
+    font-size: 24px !important;
+    text-align: center !important;
+    width: 100%;
+    margin-left: 0 !important;
+  }
+  .main .about-section .container video {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+  }
+
+  .main .albums-section h3 {
+    font-size: 24px !important;
+    text-align: center;
+    margin: 30px 10px;
+  }
+  .albumsOll01, .albumsOll02, .albumsOll03, .albumsOll04, .albumsOll05 {
+    flex-direction: column !important;
+    align-items: center;
+  }
+  .album {
+    width: 90% !important;
+    max-width: 400px;
+    margin: 15px auto !important;
+  }
+
+  .read-more-label {
+    display: inline-block;
+    background-color: rgb(47, 109, 245);
+    color: white;
+    padding: 10px 20px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+  }
+  .more-content {
+    display: none;
+  }
+  .read-more-check:checked ~ .more-content {
+    display: block;
+  }
+  .read-more-check:checked ~ .read-more-label {
+    display: none;
+  }
+
+  .main .films-section h2 {
+    font-size: 24px !important;
+    text-align: center;
+  }
+  .main .films-section .films {
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+  }
+  .main .films-section .films div {
+    margin: 15px 0;
+    width: 90%;
+    max-width: 350px;
+  }
+  .main .films-section .films div img {
+    width: 100%;
+    height: auto;
+    max-height: none;
+  }
+
+  .footer .footer-upper .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+  .footer .footer-upper .container .footer-links ol li {
+    display: block;
+    margin: 5px 0;
+  }
+
+  .more-content { display: none; }
+  .read-more-label { display: inline-block; }
+  .read-more-check:checked ~ .more-content { display: block; }
+  .read-more-check:checked ~ .read-more-label { display: none; }
+}
