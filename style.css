@@ -89,6 +89,10 @@ body {
   background-repeat: no-repeat;
 }
 
+.mobile-gif {
+  display: none;
+}
+
 .main .intro-section .container {
   display: flex;
   flex-direction: column;
@@ -119,8 +123,18 @@ body {
   animation: pulsate-bck 1.5s ease-in-out infinite both;
 }
 
+@-webkit-keyframes pulsate-bck {
+  0% { -webkit-transform: scale(1); transform: scale(1); }
+  50% { -webkit-transform: scale(0.95); transform: scale(0.95); }
+  100% { -webkit-transform: scale(1); transform: scale(1); }
+}
+@keyframes pulsate-bck {
+  0% { -webkit-transform: scale(1); transform: scale(1); }
+  50% { -webkit-transform: scale(0.95); transform: scale(0.95); }
+  100% { -webkit-transform: scale(1); transform: scale(1); }
+}
+
 .main .about-section {
-  padding-top: 50px;
   background-color: rgb(47, 109, 245);
 }
 
@@ -254,30 +268,57 @@ body {
     display: flex;
   }
 
+  /* На мобильных гифка показывается как обычное изображение, фон убираем */
   .main .intro-section {
-    height: 100px;
-    min-height: 550px;
-    padding: 0; 
-    background-size: 100% auto; 
-    background-position: top center; 
+    height: auto; 
+    min-height: 0;
+    background-image: none; 
+    background-color: rgb(47, 109, 245); 
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0;
+  }
+
+  /* Новый контейнер для позиционирования текста поверх GIF */
+  .mobile-hero-container {
+    position: relative;
+    width: 100%;
+  }
+
+  .mobile-gif {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  /* Наложение заголовков на GIF */
+  .main .intro-section .intro-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.8); /* Тень для читаемости */
   }
 
   .main .intro-section .container {
-    padding: 0;
-    gap: 0;
+    padding: 20px;
+    gap: 15px;
   }
 
   .main .intro-section h1 { 
     font-size: 48px; 
-    padding-top: 40px;
+    padding-top: 0;
+    margin: 0;
   }
 
   .main .intro-section h3 { 
     font-size: 22px; 
-    padding-bottom: 60px;
+    padding-bottom: 0;
+    margin: 0;
   }
 
   .main .intro-section p {
@@ -285,13 +326,14 @@ body {
     padding: 20px;
     font-size: 18px;
     margin-top: 0;
+    color: white;
   }
   
   .main .intro-section .pulsate-bck { 
     font-size: 18px;
     padding: 10px 20px;
     margin-top: 10px; 
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     background-color: white; 
     color: rgb(47, 109, 245); 
   }
@@ -321,6 +363,5 @@ body {
 
   .about-man h3 {
     font-size: 30px !important; 
-
   }
 }
