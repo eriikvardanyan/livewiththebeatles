@@ -266,6 +266,10 @@
   display: block;
 }
 
+.menu-checkbox, .menu-icon {
+  display: none; 
+}
+
 @media (max-width: 768px) {
   .header .nav {
     padding: 15px 25px !important;
@@ -273,7 +277,7 @@
   }
   .menu-icon {
     display: block;
-    font-size: 40px;
+    font-size: 30px;
     cursor: pointer;
     color: white;
   }
@@ -287,6 +291,7 @@
     flex-direction: column;
     padding: 20px;
     z-index: 200;
+    border-bottom: #ffffff;
   }
   .menu-checkbox:checked ~ .nav-menu {
     display: flex;
