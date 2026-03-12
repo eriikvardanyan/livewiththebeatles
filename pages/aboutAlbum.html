@@ -1,41 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./aboutAlbum.css" />
     <link rel="icon" href="../img/pngegg9.png">
     <title>The Beatles</title>
 </head>
-
 <body>
     <!-- Header ----------------------------------------------------------------------- -->
     <div class="header">
         <div class="nav" class="container">
             <div class="logo">
                 <p>「 live with 」</p>
-                <a href="#" clas>The Beatles</a>
+                <a href="#">The Beatles</a>
             </div>
-            <ol>
-                <a href="#evolution">
-                    <li>Էվոլութիա</li>
-                </a>
-                <a href="#diskografia">
-                    <li>Սկավառակագրություն</li>
-                </a>
-                <a href="#filmagrafia">
-                    <li>Ֆիլմագրաֆիա</li>
-                </a>
-                <a href="#aboutus">
-                    <li>Մեր մասին</li>
-                </a>
-                <li>║</li>
-                <a href="../index.html">
-                    <li>Հետ</li>
-                </a>
+            <input type="checkbox" id="menu-toggle" class="menu-checkbox" style="display:none;">
+            <label for="menu-toggle" class="menu-icon">☰</label>
+            <ol class="nav-menu">
+                <a href="#evolution"><li>Էվոլութիա</li></a>
+                <a href="#diskografia"><li>Սկավառակագրություն</li></a>
+                <a href="#filmagrafia"><li>Ֆիլմագրաֆիա</li></a>
+                <li class="separator">║</li>
+                <a href="../index.html"><li>Հետ</li></a>
             </ol>
         </div>
     </div>
+
     <!-- Main ----------------------------------------------------------------------- -->
     <div class="main">
         <!-- intro-section -->
@@ -44,6 +35,7 @@
                 <img src="../img/The_Beatles_Photo3.png" alt="The Beatles">
             </div>
         </div>
+
         <!-- about-section -->
         <div class="about-section">
             <div id="evolution" style="height: 70px;"></div>
@@ -56,10 +48,12 @@
                 </video>
             </div>
         </div>
+
         <!-- albums-section -->
         <div class="albums-section" id="diskografia">
             <div class="albumsOll">
                 <h3>"The Beatles" խմբի սկավառակագրությունը</h3>
+
                 <!-- sharq 1 -->
                 <div class="albumsOll01" style="display: flex;">
                     <!-- albom 1-1 -->
@@ -69,30 +63,33 @@
                             <h4>1. Please Please Me</h4>
                         </div>
                         <img src="../img/albums/1-please-please-me.jpg" alt="Please Please Me">
-                        <div class="album-content">
-                            <ol style="list-style-type:decimal-leading-zero; padding: 5px 30px;">
-                                <li>★ I Saw Her Standing There</li>
-                                <li>★ Misery</li>
-                                <li>☆ Anna (Go to Him)</li>
-                                <li>☆ Chains</li>
-                                <li>☆ Boys</li>
-                                <li>☆ Ask Me Why</li>
-                                <li>★ Please Please Me</li>
-
-                                <li>★ Love Me Do</li>
-                                <li>☆ P.S. I Love You</li>
-                                <li>☆ Baby It's You</li>
-                                <li>★ Do You Want to Know a Secret</li>
-                                <li>☆ A Taste of Honey</li>
-                                <li>☆ There's a Place</li>
-                                <li>★ Twist and Shout</li>
-                            </ol>
+                        <input type="checkbox" id="expand-album1" class="read-more-check">
+                        <label for="expand-album1" class="read-more-label">Տեսնել ավելին</label>
+                        <div class="more-content">
+                            <div class="album-content">
+                                <ol style="list-style-type:decimal-leading-zero; padding: 5px 30px;">
+                                    <li>★ I Saw Her Standing There</li>
+                                    <li>★ Misery</li>
+                                    <li>☆ Anna (Go to Him)</li>
+                                    <li>☆ Chains</li>
+                                    <li>☆ Boys</li>
+                                    <li>☆ Ask Me Why</li>
+                                    <li>★ Please Please Me</li>
+                                    <li>★ Love Me Do</li>
+                                    <li>☆ P.S. I Love You</li>
+                                    <li>☆ Baby It's You</li>
+                                    <li>★ Do You Want to Know a Secret</li>
+                                    <li>☆ A Taste of Honey</li>
+                                    <li>☆ There's a Place</li>
+                                    <li>★ Twist and Shout</li>
+                                </ol>
+                            </div>
+                            <a href="https://open.spotify.com/album/3KzAvEXcqJKBF97HrXwlgf" target="_blank">
+                                <p>Լսել երգերը</p> <img src="../img/spotify.png" alt="spotify">
+                            </a>
                         </div>
-                        <!-- https://rocknation.su/mp3/album-964 -->
-                        <a href="https://open.spotify.com/album/3KzAvEXcqJKBF97HrXwlgf" target="_blank">
-                            <p>Լսել երգերը</p> <img src="../img/spotify.png" alt="spotify">
-                        </a>
                     </div>
+
                     <!-- albom 1-2 -->
                     <div class="album">
                         <div class="album-name">
@@ -100,30 +97,33 @@
                             <h4>2. With the Beatles</h4>
                         </div>
                         <img src="../img/albums/2-with-the-beatles.jpg" alt="With the Beatles">
-                        <div class="album-content">
-                            <ol style="list-style-type:decimal-leading-zero; padding: 5px 30px;">
-                                <!-- ★☆ -->
-                                <li>☆ It Won’t Be Long</li>
-                                <li>☆ All I’ve Got to Do</li>
-                                <li>★ All My Loving</li>
-                                <li>☆ Don’t Bother Me</li>
-                                <li>☆ Little Child</li>
-                                <li>☆ Till There Was You</li>
-                                <li>★ Please Mr. Postman</li>
-
-                                <li>★ Roll Over Beethoven</li>
-                                <li>☆ Hold Me Tight</li>
-                                <li>☆ You Really Got a Hold on Me</li>
-                                <li>☆ I Wanna Be Your Man</li>
-                                <li>★ Devil in His Heart</li>
-                                <li>☆ Not a Second Time</li>
-                                <li>☆ Money (That’s What I Want)</li>
-                            </ol>
+                        <input type="checkbox" id="expand-album2" class="read-more-check">
+                        <label for="expand-album2" class="read-more-label">Տեսնել ավելին</label>
+                        <div class="more-content">
+                            <div class="album-content">
+                                <ol style="list-style-type:decimal-leading-zero; padding: 5px 30px;">
+                                    <li>☆ It Won’t Be Long</li>
+                                    <li>☆ All I’ve Got to Do</li>
+                                    <li>★ All My Loving</li>
+                                    <li>☆ Don’t Bother Me</li>
+                                    <li>☆ Little Child</li>
+                                    <li>☆ Till There Was You</li>
+                                    <li>★ Please Mr. Postman</li>
+                                    <li>★ Roll Over Beethoven</li>
+                                    <li>☆ Hold Me Tight</li>
+                                    <li>☆ You Really Got a Hold on Me</li>
+                                    <li>☆ I Wanna Be Your Man</li>
+                                    <li>★ Devil in His Heart</li>
+                                    <li>☆ Not a Second Time</li>
+                                    <li>☆ Money (That’s What I Want)</li>
+                                </ol>
+                            </div>
+                            <a href="https://open.spotify.com/album/1aYdiJk6XKeHWGO3FzHHTr" target="_blank">
+                                <p>Լսել երգերը</p> <img src="../img/spotify.png" alt="spotify">
+                            </a>
                         </div>
-                        <a href="https://open.spotify.com/album/1aYdiJk6XKeHWGO3FzHHTr" target="_blank">
-                            <p>Լսել երգերը</p> <img src="../img/spotify.png" alt="spotify">
-                        </a>
                     </div>
+
                     <!-- albom 1-3 -->
                     <div class="album">
                         <div class="album-name">
@@ -131,30 +131,33 @@
                             <h4>3. A Hard Day’s Night</h4>
                         </div>
                         <img src="../img/albums/3-a-hard-day’s-night.jpg" alt="A Hard Day’s Night">
-                        <div class="album-content">
-                            <ol style="list-style-type:decimal-leading-zero; padding: 5px 30px; padding-bottom: 24px;">
-                                <!-- ★☆ -->
-                                <li>★ A Hard Day’s Night</li>
-                                <li>★ I Shoold Have Known Better</li>
-                                <li>★ If I Fell</li>
-                                <li>★ I’m Happy Just to Dance with You</li>
-                                <li>★ And I Love Her</li>
-                                <li>★ Tell Me Why</li>
-                                <li>★ Can’t Buy Me Love</li>
-
-                                <li>☆ Any Time at All</li>
-                                <li>☆ I’ll Cry Instead</li>
-                                <li>★ Things We Said Today</li>
-                                <li>☆ When I Get Home</li>
-                                <li>☆ You Can’t Do That</li>
-                                <li>☆ I’ll Be Back</li>
-                            </ol>
+                        <input type="checkbox" id="expand-album3" class="read-more-check">
+                        <label for="expand-album3" class="read-more-label">Տեսնել ավելին</label>
+                        <div class="more-content">
+                            <div class="album-content">
+                                <ol style="list-style-type:decimal-leading-zero; padding: 5px 30px; padding-bottom: 24px;">
+                                    <li>★ A Hard Day’s Night</li>
+                                    <li>★ I Shoold Have Known Better</li>
+                                    <li>★ If I Fell</li>
+                                    <li>★ I’m Happy Just to Dance with You</li>
+                                    <li>★ And I Love Her</li>
+                                    <li>★ Tell Me Why</li>
+                                    <li>★ Can’t Buy Me Love</li>
+                                    <li>☆ Any Time at All</li>
+                                    <li>☆ I’ll Cry Instead</li>
+                                    <li>★ Things We Said Today</li>
+                                    <li>☆ When I Get Home</li>
+                                    <li>☆ You Can’t Do That</li>
+                                    <li>☆ I’ll Be Back</li>
+                                </ol>
+                            </div>
+                            <a href="https://open.spotify.com/album/6wCttLq0ADzkPgtRnUihLV" target="_blank">
+                                <p>Լսել երգերը</p> <img src="../img/spotify.png" alt="spotify">
+                            </a>
                         </div>
-                        <a href="https://open.spotify.com/album/6wCttLq0ADzkPgtRnUihLV" target="_blank">
-                            <p>Լսել երգերը</p> <img src="../img/spotify.png" alt="spotify">
-                        </a>
                     </div>
                 </div>
+
                 <!-- sharq 2 -->
                 <div class="albumsOll02" style="display: flex;">
                     <!-- albom 2-1 -->
@@ -164,30 +167,33 @@
                             <h4>4. Beatles for Sale</h4>
                         </div>
                         <img src="../img/albums/4-beatles-for-sale.jpg" alt="Beatles for Sale">
-                        <div class="album-content">
-                            <ol style="list-style-type:decimal-leading-zero; padding: 5px 30px;">
-                                <!-- ★☆ -->
-                                <li>☆ No Reply</li>
-                                <li>★ I’m a Loser</li>
-                                <li>☆ Baby’s in Black</li>
-                                <li>★ Rock and Roll Music</li>
-                                <li>☆ I’ll Follow the Sun</li>
-                                <li>☆ Mr. Moonlight</li>
-                                <li>☆ Kansas City/Hey-Hey-Hey-Hey!</li>
-
-                                <li>★ Eight Days a Week</li>
-                                <li>☆ Words of Love</li>
-                                <li>☆ Honey Don’t</li>
-                                <li>☆ Every Little Thing</li>
-                                <li>☆ I Don’t Want to Spoil the Party</li>
-                                <li>☆ What You’re Doing</li>
-                                <li>☆ Everybody’s Trying to Be My Baby</li>
-                            </ol>
+                        <input type="checkbox" id="expand-album4" class="read-more-check">
+                        <label for="expand-album4" class="read-more-label">Տեսնել ավելին</label>
+                        <div class="more-content">
+                            <div class="album-content">
+                                <ol style="list-style-type:decimal-leading-zero; padding: 5px 30px;">
+                                    <li>☆ No Reply</li>
+                                    <li>★ I’m a Loser</li>
+                                    <li>☆ Baby’s in Black</li>
+                                    <li>★ Rock and Roll Music</li>
+                                    <li>☆ I’ll Follow the Sun</li>
+                                    <li>☆ Mr. Moonlight</li>
+                                    <li>☆ Kansas City/Hey-Hey-Hey-Hey!</li>
+                                    <li>★ Eight Days a Week</li>
+                                    <li>☆ Words of Love</li>
+                                    <li>☆ Honey Don’t</li>
+                                    <li>☆ Every Little Thing</li>
+                                    <li>☆ I Don’t Want to Spoil the Party</li>
+                                    <li>☆ What You’re Doing</li>
+                                    <li>☆ Everybody’s Trying to Be My Baby</li>
+                                </ol>
+                            </div>
+                            <a href="https://open.spotify.com/album/1vANZV20H5B4Fk6yf7Ot9a" target="_blank">
+                                <p>Լսել երգերը</p> <img src="../img/spotify.png" alt="spotify">
+                            </a>
                         </div>
-                        <a href="https://open.spotify.com/album/1vANZV20H5B4Fk6yf7Ot9a" target="_blank">
-                            <p>Լսել երգերը</p> <img src="../img/spotify.png" alt="spotify">
-                        </a>
                     </div>
+
                     <!-- albom 2-2 -->
                     <div class="album">
                         <div class="album-name">
@@ -195,30 +201,33 @@
                             <h4>5. Help!</h4>
                         </div>
                         <img src="../img/albums/5-help.jpg" alt="Help!">
-                        <div class="album-content">
-                            <ol style="list-style-type:decimal-leading-zero; padding: 5px 30px;">
-                                <!-- ★☆ -->
-                                <li>★ Help!</li>
-                                <li>☆ The Night Before</li>
-                                <li>★ You’ve Got to Hide Your Love Away</li>
-                                <li>☆ I Need You</li>
-                                <li>★ Another Girl</li>
-                                <li>☆ You’re Going to Lose That Girl</li>
-                                <li>★ Ticket to Ride</li>
-
-                                <li>☆ Act Naturally</li>
-                                <li>☆ It’s Only Love</li>
-                                <li>☆ You Like Me Too Much</li>
-                                <li>☆ Tell Me What You See</li>
-                                <li>☆ I’ve Just Seen a Face</li>
-                                <li>★ Yesterday</li>
-                                <li>☆ Dizzy Miss Lizzie</li>
-                            </ol>
+                        <input type="checkbox" id="expand-album5" class="read-more-check">
+                        <label for="expand-album5" class="read-more-label">Տեսնել ավելին</label>
+                        <div class="more-content">
+                            <div class="album-content">
+                                <ol style="list-style-type:decimal-leading-zero; padding: 5px 30px;">
+                                    <li>★ Help!</li>
+                                    <li>☆ The Night Before</li>
+                                    <li>★ You’ve Got to Hide Your Love Away</li>
+                                    <li>☆ I Need You</li>
+                                    <li>★ Another Girl</li>
+                                    <li>☆ You’re Going to Lose That Girl</li>
+                                    <li>★ Ticket to Ride</li>
+                                    <li>☆ Act Naturally</li>
+                                    <li>☆ It’s Only Love</li>
+                                    <li>☆ You Like Me Too Much</li>
+                                    <li>☆ Tell Me What You See</li>
+                                    <li>☆ I’ve Just Seen a Face</li>
+                                    <li>★ Yesterday</li>
+                                    <li>☆ Dizzy Miss Lizzie</li>
+                                </ol>
+                            </div>
+                            <a href="https://open.spotify.com/album/0PT5m6hwPRrpBwIHVnvbFX" target="_blank">
+                                <p>Լսել երգերը</p> <img src="../img/spotify.png" alt="spotify">
+                            </a>
                         </div>
-                        <a href="https://open.spotify.com/album/0PT5m6hwPRrpBwIHVnvbFX" target="_blank">
-                            <p>Լսել երգերը</p> <img src="../img/spotify.png" alt="spotify">
-                        </a>
                     </div>
+
                     <!-- albom 2-3 -->
                     <div class="album">
                         <div class="album-name">
@@ -226,31 +235,34 @@
                             <h4>6. Rubber Sool </h4>
                         </div>
                         <img src="../img/albums/6-rubber-soul.png" alt="Rubber Sool">
-                        <div class="album-content">
-                            <ol style="list-style-type:decimal-leading-zero; padding: 5px 30px;">
-                                <!-- ★☆ -->
-                                <li>★ Drive My Car</li>
-                                <li>★ Norwegian Wood (This Bird Has Flown)</li>
-                                <li>☆ You Won’t See Me</li>
-                                <li>★ Nowhere Man</li>
-                                <li>☆ Think for Yourself</li>
-                                <li>☆ The Word</li>
-                                <li>★ Michelle</li>
-
-                                <li>★ What Goes On</li>
-                                <li>★ Girl</li>
-                                <li>☆ I’m Looking Through You</li>
-                                <li>★ In My Life</li>
-                                <li>☆ Wait</li>
-                                <li>★ If I Needed Someone</li>
-                                <li>☆ Run for Your Life</li>
-                            </ol>
+                        <input type="checkbox" id="expand-album6" class="read-more-check">
+                        <label for="expand-album6" class="read-more-label">Տեսնել ավելին</label>
+                        <div class="more-content">
+                            <div class="album-content">
+                                <ol style="list-style-type:decimal-leading-zero; padding: 5px 30px;">
+                                    <li>★ Drive My Car</li>
+                                    <li>★ Norwegian Wood (This Bird Has Flown)</li>
+                                    <li>☆ You Won’t See Me</li>
+                                    <li>★ Nowhere Man</li>
+                                    <li>☆ Think for Yourself</li>
+                                    <li>☆ The Word</li>
+                                    <li>★ Michelle</li>
+                                    <li>★ What Goes On</li>
+                                    <li>★ Girl</li>
+                                    <li>☆ I’m Looking Through You</li>
+                                    <li>★ In My Life</li>
+                                    <li>☆ Wait</li>
+                                    <li>★ If I Needed Someone</li>
+                                    <li>☆ Run for Your Life</li>
+                                </ol>
+                            </div>
+                            <a href="https://open.spotify.com/album/50o7kf2wLwVmOTVYJOTplm" target="_blank">
+                                <p>Լսել երգերը</p> <img src="../img/spotify.png" alt="spotify">
+                            </a>
                         </div>
-                        <a href="https://open.spotify.com/album/50o7kf2wLwVmOTVYJOTplm" target="_blank">
-                            <p>Լսել երգերը</p> <img src="../img/spotify.png" alt="spotify">
-                        </a>
                     </div>
                 </div>
+
                 <!-- sharq 3 -->
                 <div class="albumsOll03" style="display: flex;">
                     <!-- albom 3-1 -->
@@ -260,30 +272,33 @@
                             <h4>7. Revolver</h4>
                         </div>
                         <img src="../img/albums/7-revolver.jpg" alt="Revolver">
-                        <div class="album-content">
-                            <ol style="list-style-type:decimal-leading-zero; padding: 5px 30px;">
-                                <!-- ★☆ -->
-                                <li>★ Taxman</li>
-                                <li>★ Eleanor Rigby</li>
-                                <li>★ I’m Only Sleeping</li>
-                                <li>☆ Love You To</li>
-                                <li>★ Here, There and Everywhere</li>
-                                <li>★ Yellow Submarine</li>
-                                <li>☆ She Said, She Said</li>
-
-                                <li>★ Good Day Sunshine</li>
-                                <li>☆ And Your Bird Can Sing</li>
-                                <li>☆ For No One</li>
-                                <li>☆ Doctor Robert</li>
-                                <li>☆ I Want to Tell You</li>
-                                <li>☆ Got to Get You into My Life</li>
-                                <li>★ Tomorrow Never Knows</li>
-                            </ol>
+                        <input type="checkbox" id="expand-album7" class="read-more-check">
+                        <label for="expand-album7" class="read-more-label">Տեսնել ավելին</label>
+                        <div class="more-content">
+                            <div class="album-content">
+                                <ol style="list-style-type:decimal-leading-zero; padding: 5px 30px;">
+                                    <li>★ Taxman</li>
+                                    <li>★ Eleanor Rigby</li>
+                                    <li>★ I’m Only Sleeping</li>
+                                    <li>☆ Love You To</li>
+                                    <li>★ Here, There and Everywhere</li>
+                                    <li>★ Yellow Submarine</li>
+                                    <li>☆ She Said, She Said</li>
+                                    <li>★ Good Day Sunshine</li>
+                                    <li>☆ And Your Bird Can Sing</li>
+                                    <li>☆ For No One</li>
+                                    <li>☆ Doctor Robert</li>
+                                    <li>☆ I Want to Tell You</li>
+                                    <li>☆ Got to Get You into My Life</li>
+                                    <li>★ Tomorrow Never Knows</li>
+                                </ol>
+                            </div>
+                            <a href="https://open.spotify.com/album/3PRoXYsngSwjEQWR5PsHWR" target="_blank">
+                                <p>Լսել երգերը</p> <img src="../img/spotify.png" alt="spotify">
+                            </a>
                         </div>
-                        <a href="https://open.spotify.com/album/3PRoXYsngSwjEQWR5PsHWR" target="_blank">
-                            <p>Լսել երգերը</p> <img src="../img/spotify.png" alt="spotify">
-                        </a>
                     </div>
+
                     <!-- albom 3-2 -->
                     <div class="album">
                         <div class="album-name">
@@ -292,29 +307,32 @@
                         </div>
                         <img src="../img/albums/8-sgt-pepper’s-lonely-hearts-club-band.jpg"
                             alt="Sgt. Peppers Lonely Hearts Club Band">
-                        <div class="album-content">
-                            <ol style="list-style-type:decimal-leading-zero; padding: 5px 30px;">
-                                <!-- ★☆ -->
-                                <li>★ Sgt. Pepper’s Lonely Hearts Club Band</li>
-                                <li>★ With a Little Help from My Friends</li>
-                                <li>★ Lucy in the Sky with Diamonds</li>
-                                <li>★ Getting Better</li>
-                                <li>★ Fixing a Hole</li>
-                                <li>☆ She’s Leaving Home</li>
-                                <li>★ Being for the Benefit of Mr. Kite!</li>
-
-                                <li>☆ Within You Without You</li>
-                                <li>★ When I’m Sixty-Four</li>
-                                <li>★ Lovely Rita</li>
-                                <li>☆ Good Morning Good Morning</li>
-                                <li>★ Sgt. Pepper’s Lonely Hearts Club Band (Reprise)</li>
-                                <li>★ A Day in the Life</li>
-                            </ol>
+                        <input type="checkbox" id="expand-album8" class="read-more-check">
+                        <label for="expand-album8" class="read-more-label">Տեսնել ավելին</label>
+                        <div class="more-content">
+                            <div class="album-content">
+                                <ol style="list-style-type:decimal-leading-zero; padding: 5px 30px;">
+                                    <li>★ Sgt. Pepper’s Lonely Hearts Club Band</li>
+                                    <li>★ With a Little Help from My Friends</li>
+                                    <li>★ Lucy in the Sky with Diamonds</li>
+                                    <li>★ Getting Better</li>
+                                    <li>★ Fixing a Hole</li>
+                                    <li>☆ She’s Leaving Home</li>
+                                    <li>★ Being for the Benefit of Mr. Kite!</li>
+                                    <li>☆ Within You Without You</li>
+                                    <li>★ When I’m Sixty-Four</li>
+                                    <li>★ Lovely Rita</li>
+                                    <li>☆ Good Morning Good Morning</li>
+                                    <li>★ Sgt. Pepper’s Lonely Hearts Club Band (Reprise)</li>
+                                    <li>★ A Day in the Life</li>
+                                </ol>
+                            </div>
+                            <a href="https://open.spotify.com/album/6QaVfG1pHYl1z15ZxkvVDW?highlight=spotify:track:4fUKE8EULjQdHF4zb0M8FO" target="_blank">
+                                <p>Լսել երգերը</p> <img src="../img/spotify.png" alt="spotify">
+                            </a>
                         </div>
-                        <a href="https://open.spotify.com/album/6QaVfG1pHYl1z15ZxkvVDW?highlight=spotify:track:4fUKE8EULjQdHF4zb0M8FO" target="_blank">
-                            <p>Լսել երգերը</p> <img src="../img/spotify.png" alt="spotify">
-                        </a>
                     </div>
+
                     <!-- albom 3-3 -->
                     <div class="album">
                         <div class="album-name">
@@ -322,28 +340,31 @@
                             <h4>9. Magical Mystery Tour</h4>
                         </div>
                         <img src="../img/albums/9-magical-mystery-tour.jpg" alt="Magical Mystery Tour">
-                        <div class="album-content">
-                            <ol style="list-style-type:decimal-leading-zero; padding: 5px 30px; padding-bottom: 70px;">
-                                <!-- ★☆ -->
-                                <li>★ Magical Mystery Tour</li>
-                                <li>★ The Fool on the Hill</li>
-                                <li>☆ Flying</li>
-                                <li>★ Blue Jay Way</li>
-                                <li>★ Your Mother Shoold Know</li>
-                                <li>★ I Am the Walrus</li>
-
-                                <li>★ Hello, Goodbye</li>
-                                <li>★ Strawberry Fields Forever</li>
-                                <li>★ Penny Lane</li>
-                                <li>★ Baby, You’re a Rich Man</li>
-                                <li>★ All You Need Is Love</li>
-                            </ol>
+                        <input type="checkbox" id="expand-album9" class="read-more-check">
+                        <label for="expand-album9" class="read-more-label">Տեսնել ավելին</label>
+                        <div class="more-content">
+                            <div class="album-content">
+                                <ol style="list-style-type:decimal-leading-zero; padding: 5px 30px; padding-bottom: 70px;">
+                                    <li>★ Magical Mystery Tour</li>
+                                    <li>★ The Fool on the Hill</li>
+                                    <li>☆ Flying</li>
+                                    <li>★ Blue Jay Way</li>
+                                    <li>★ Your Mother Shoold Know</li>
+                                    <li>★ I Am the Walrus</li>
+                                    <li>★ Hello, Goodbye</li>
+                                    <li>★ Strawberry Fields Forever</li>
+                                    <li>★ Penny Lane</li>
+                                    <li>★ Baby, You’re a Rich Man</li>
+                                    <li>★ All You Need Is Love</li>
+                                </ol>
+                            </div>
+                            <a href="https://open.spotify.com/album/2BtE7qm1qzM80p9vLSiXkj" target="_blank">
+                                <p>Լսել երգերը</p> <img src="../img/spotify.png" alt="spotify">
+                            </a>
                         </div>
-                        <a href="https://open.spotify.com/album/2BtE7qm1qzM80p9vLSiXkj" target="_blank">
-                            <p>Լսել երգերը</p> <img src="../img/spotify.png" alt="spotify">
-                        </a>
                     </div>
                 </div>
+
                 <!-- sharq 4 -->
                 <div class="albumsOll04" style="display: flex;">
                     <!-- albom 4-1 -->
@@ -353,33 +374,36 @@
                             <h4>10. The Beatles «White Album» 1/2</h4>
                         </div>
                         <img src="../img/albums/10-the-beatles.jpg" alt="The Beatles «White Album»">
-                        <div class="album-content">
-                            <ol style="list-style-type:decimal-leading-zero; padding: 5px 30px;">
-                                <!-- ★☆ -->
-                                <li>★ Back in the USSR</li>
-                                <li>★ Dear Prudence</li>
-                                <li>★ Glass Onion</li>
-                                <li>★ Ob-La-Di, Ob-La-Da</li>
-                                <li>☆ Wild Honey Pie</li>
-                                <li>★ The Continuing Story of Bungalow Bill</li>
-                                <li>★ While My Guitar Gently Weeps</li>
-                                <li>★ Happiness Is a Warm Gun</li>
-
-                                <li>☆ Martha My Dear</li>
-                                <li>★ I’m So Tired</li>
-                                <li>★ Blackbird</li>
-                                <li>☆ Piggies</li>
-                                <li>☆ Rocky Raccoon</li>
-                                <li>★ Don’t Pass Me By</li>
-                                <li>☆ Why Don’t We Do It in the Road?</li>
-                                <li>☆ I Will</li>
-                                <li>☆ Jolia </li>
-                            </ol>
+                        <input type="checkbox" id="expand-album10" class="read-more-check">
+                        <label for="expand-album10" class="read-more-label">Տեսնել ավելին</label>
+                        <div class="more-content">
+                            <div class="album-content">
+                                <ol style="list-style-type:decimal-leading-zero; padding: 5px 30px;">
+                                    <li>★ Back in the USSR</li>
+                                    <li>★ Dear Prudence</li>
+                                    <li>★ Glass Onion</li>
+                                    <li>★ Ob-La-Di, Ob-La-Da</li>
+                                    <li>☆ Wild Honey Pie</li>
+                                    <li>★ The Continuing Story of Bungalow Bill</li>
+                                    <li>★ While My Guitar Gently Weeps</li>
+                                    <li>★ Happiness Is a Warm Gun</li>
+                                    <li>☆ Martha My Dear</li>
+                                    <li>★ I’m So Tired</li>
+                                    <li>★ Blackbird</li>
+                                    <li>☆ Piggies</li>
+                                    <li>☆ Rocky Raccoon</li>
+                                    <li>★ Don’t Pass Me By</li>
+                                    <li>☆ Why Don’t We Do It in the Road?</li>
+                                    <li>☆ I Will</li>
+                                    <li>☆ Jolia </li>
+                                </ol>
+                            </div>
+                            <a href="https://open.spotify.com/album/1klALx0u4AavZNEvC4LrTL" target="_blank">
+                                <p>Լսել երգերը</p> <img src="../img/spotify.png" alt="spotify">
+                            </a>
                         </div>
-                        <a href="https://open.spotify.com/album/1klALx0u4AavZNEvC4LrTL" target="_blank">
-                            <p>Լսել երգերը</p> <img src="../img/spotify.png" alt="spotify">
-                        </a>
                     </div>
+
                     <!-- albom 4-2 -->
                     <div class="album">
                         <div class="album-name">
@@ -387,30 +411,33 @@
                             <h4>10. The Beatles «White Album» 2/2</h4>
                         </div>
                         <img src="../img/albums/10-the-beatles.jpg" alt="The Beatles «White Album»">
-                        <div class="album-content">
-                            <ol start="18"
-                                style="list-style-type:decimal-leading-zero; padding: 5px 30px; padding-bottom: 70px;">
-                                <!-- ★☆ -->
-                                <li>☆ Birthday</li>
-                                <li>☆ Yer Blues</li>
-                                <li>☆ Mother Nature’s Son</li>
-                                <li>☆ Everybody’s Got Something to Hide Except Me and My Monkey</li>
-                                <li>☆ Sexy Sadie</li>
-                                <li>★ Helter Skelter</li>
-                                <li>☆ Long, Long, Long</li>
-
-                                <li>★ Revolution 1</li>
-                                <li>☆ Honey Pie</li>
-                                <li>☆ Savoy Truffle</li>
-                                <li>☆ Cry Baby Cry</li>
-                                <li>☆ Revolution 9</li>
-                                <li>☆ Good Night</li>
-                            </ol>
+                        <input type="checkbox" id="expand-album11" class="read-more-check">
+                        <label for="expand-album11" class="read-more-label">Տեսնել ավելին</label>
+                        <div class="more-content">
+                            <div class="album-content">
+                                <ol start="18"
+                                    style="list-style-type:decimal-leading-zero; padding: 5px 30px; padding-bottom: 70px;">
+                                    <li>☆ Birthday</li>
+                                    <li>☆ Yer Blues</li>
+                                    <li>☆ Mother Nature’s Son</li>
+                                    <li>☆ Everybody’s Got Something to Hide Except Me and My Monkey</li>
+                                    <li>☆ Sexy Sadie</li>
+                                    <li>★ Helter Skelter</li>
+                                    <li>☆ Long, Long, Long</li>
+                                    <li>★ Revolution 1</li>
+                                    <li>☆ Honey Pie</li>
+                                    <li>☆ Savoy Truffle</li>
+                                    <li>☆ Cry Baby Cry</li>
+                                    <li>☆ Revolution 9</li>
+                                    <li>☆ Good Night</li>
+                                </ol>
+                            </div>
+                            <a href="https://open.spotify.com/album/1klALx0u4AavZNEvC4LrTL" target="_blank">
+                                <p>Լսել երգերը</p> <img src="../img/spotify.png" alt="spotify">
+                            </a>
                         </div>
-                        <a href="https://open.spotify.com/album/1klALx0u4AavZNEvC4LrTL" target="_blank">
-                            <p>Լսել երգերը</p> <img src="../img/spotify.png" alt="spotify">
-                        </a>
                     </div>
+
                     <!-- albom 4-3 -->
                     <div class="album">
                         <div class="album-name">
@@ -418,30 +445,33 @@
                             <h4>11. Yellow Submarine </h4>
                         </div>
                         <img src="../img/albums/11-yellow-submarine.jpg" alt="Yellow Submarine">
-                        <div class="album-content">
-                            <ol style="list-style-type:decimal-leading-zero; padding: 5px 30px; padding-bottom: 90px;">
-                                <!-- ★☆ -->
-                                <li>★ Yellow Submarine</li>
-                                <li>☆ Only a Northern Song</li>
-                                <li>★ All Together Now</li>
-                                <li>★ Hey Bolldog</li>
-                                <li>☆ It’s All Too Much</li>
-                                <li>★ All You Need Is Love</li>
-
-                                <li>☆ Pepperland</li>
-                                <li>☆ Sea of Time</li>
-                                <li>☆ Sea of Holes</li>
-                                <li>☆ Sea of Monsters</li>
-                                <li>☆ March of the Meanies</li>
-                                <li>☆ Pepperland Laid Waste</li>
-                                <li>☆ Yellow Submarine in Pepperland</li>
-                            </ol>
+                        <input type="checkbox" id="expand-album12" class="read-more-check">
+                        <label for="expand-album12" class="read-more-label">Տեսնել ավելին</label>
+                        <div class="more-content">
+                            <div class="album-content">
+                                <ol style="list-style-type:decimal-leading-zero; padding: 5px 30px; padding-bottom: 90px;">
+                                    <li>★ Yellow Submarine</li>
+                                    <li>☆ Only a Northern Song</li>
+                                    <li>★ All Together Now</li>
+                                    <li>★ Hey Bolldog</li>
+                                    <li>☆ It’s All Too Much</li>
+                                    <li>★ All You Need Is Love</li>
+                                    <li>☆ Pepperland</li>
+                                    <li>☆ Sea of Time</li>
+                                    <li>☆ Sea of Holes</li>
+                                    <li>☆ Sea of Monsters</li>
+                                    <li>☆ March of the Meanies</li>
+                                    <li>☆ Pepperland Laid Waste</li>
+                                    <li>☆ Yellow Submarine in Pepperland</li>
+                                </ol>
+                            </div>
+                            <a href="https://open.spotify.com/album/1gKZ5A1ndFqbcrWtW85cCy" target="_blank">
+                                <p>Լսել երգերը</p> <img src="../img/spotify.png" alt="spotify">
+                            </a>
                         </div>
-                        <a href="https://open.spotify.com/album/1gKZ5A1ndFqbcrWtW85cCy" target="_blank">
-                            <p>Լսել երգերը</p> <img src="../img/spotify.png" alt="spotify">
-                        </a>
                     </div>
                 </div>
+
                 <!-- sharq 5 -->
                 <div class="albumsOll05" style="display: flex;">
                     <!-- albom 5-1 -->
@@ -451,33 +481,36 @@
                             <h4>12. Abbey Road</h4>
                         </div>
                         <img src="../img/albums/12-abbey-road.jpg" alt="Abbey Road">
-                        <div class="album-content">
-                            <ol style="list-style-type:decimal-leading-zero; padding: 5px 30px;">
-                                <!-- ★☆ -->
-                                <li>★ Come Together</li>
-                                <li>★ Something</li>
-                                <li>★ Maxwell’s Silver Hammer</li>
-                                <li>★ Oh! Darling</li>
-                                <li>★ Octopus’s Garden</li>
-                                <li>★ I Want You (She’s So Heavy)</li>
-
-                                <li>★ Here Comes the Sun</li>
-                                <li>★ Because</li>
-                                <li>★ You Never Give Me Your Money</li>
-                                <li>★ Sun King</li>
-                                <li>☆ Mean Mr. Mustard</li>
-                                <li>★ Polythene Pam</li>
-                                <li>★ She Came In Through the Bathroom Window</li>
-                                <li>★ Golden Slumbers</li>
-                                <li>★ Carry That Weight</li>
-                                <li>★ The End</li>
-                                <li>☆ Her Majesty</li>
-                            </ol>
+                        <input type="checkbox" id="expand-album13" class="read-more-check">
+                        <label for="expand-album13" class="read-more-label">Տեսնել ավելին</label>
+                        <div class="more-content">
+                            <div class="album-content">
+                                <ol style="list-style-type:decimal-leading-zero; padding: 5px 30px;">
+                                    <li>★ Come Together</li>
+                                    <li>★ Something</li>
+                                    <li>★ Maxwell’s Silver Hammer</li>
+                                    <li>★ Oh! Darling</li>
+                                    <li>★ Octopus’s Garden</li>
+                                    <li>★ I Want You (She’s So Heavy)</li>
+                                    <li>★ Here Comes the Sun</li>
+                                    <li>★ Because</li>
+                                    <li>★ You Never Give Me Your Money</li>
+                                    <li>★ Sun King</li>
+                                    <li>☆ Mean Mr. Mustard</li>
+                                    <li>★ Polythene Pam</li>
+                                    <li>★ She Came In Through the Bathroom Window</li>
+                                    <li>★ Golden Slumbers</li>
+                                    <li>★ Carry That Weight</li>
+                                    <li>★ The End</li>
+                                    <li>☆ Her Majesty</li>
+                                </ol>
+                            </div>
+                            <a href="https://open.spotify.com/album/0ETFjACtuP2ADo6LFhL6HN" target="_blank">
+                                <p>Լսել երգերը</p> <img src="../img/spotify.png" alt="spotify">
+                            </a>
                         </div>
-                        <a href="https://open.spotify.com/album/0ETFjACtuP2ADo6LFhL6HN" target="_blank">
-                            <p>Լսել երգերը</p> <img src="../img/spotify.png" alt="spotify">
-                        </a>
                     </div>
+
                     <!-- albom 5-2 -->
                     <div class="album">
                         <div class="album-name">
@@ -485,28 +518,31 @@
                             <h4>13. Let It Be</h4>
                         </div>
                         <img src="../img/albums/13-let-it-be.jpg" alt="Let It Be">
-                        <div class="album-content">
-                            <ol style="list-style-type:decimal-leading-zero; padding: 5px 30px; padding-bottom: 140px;">
-                                <!-- ★☆ -->
-                                <li>★ Two of Us</li>
-                                <li>★ Dig a Pony</li>
-                                <li>★ Across the Universe</li>
-                                <li>★ I Me Mine</li>
-                                <li>☆ Dig It</li>
-                                <li>★ Let It Be</li>
-                                <li>☆ Maggie May</li>
-
-                                <li>☆ I’ve Got a Feeling</li>
-                                <li>☆ One After 909</li>
-                                <li>★ The Long and Winding Road</li>
-                                <li>☆ For You Blue</li>
-                                <li>★ Get Back</li>
-                            </ol>
+                        <input type="checkbox" id="expand-album14" class="read-more-check">
+                        <label for="expand-album14" class="read-more-label">Տեսնել ավելին</label>
+                        <div class="more-content">
+                            <div class="album-content">
+                                <ol style="list-style-type:decimal-leading-zero; padding: 5px 30px; padding-bottom: 140px;">
+                                    <li>★ Two of Us</li>
+                                    <li>★ Dig a Pony</li>
+                                    <li>★ Across the Universe</li>
+                                    <li>★ I Me Mine</li>
+                                    <li>☆ Dig It</li>
+                                    <li>★ Let It Be</li>
+                                    <li>☆ Maggie May</li>
+                                    <li>☆ I’ve Got a Feeling</li>
+                                    <li>☆ One After 909</li>
+                                    <li>★ The Long and Winding Road</li>
+                                    <li>☆ For You Blue</li>
+                                    <li>★ Get Back</li>
+                                </ol>
+                            </div>
+                            <a href="https://open.spotify.com/album/0jTGHV5xqHPvEcwL8f6YU5" target="_blank">
+                                <p>Լսել երգերը</p> <img src="../img/spotify.png" alt="spotify">
+                            </a>
                         </div>
-                        <a href="https://open.spotify.com/album/0jTGHV5xqHPvEcwL8f6YU5" target="_blank">
-                            <p>Լսել երգերը</p> <img src="../img/spotify.png" alt="spotify">
-                        </a>
                     </div>
+
                     <!-- albom 5-3 -->
                     <div class="album">
                         <div class="album-name">
@@ -514,43 +550,33 @@
                             <h4>Singles & Covers</h4>
                         </div>
                         <img src="../img/albums/14-singles.jpg" alt="Singles Collection">
-                        <div class="album-content">
-                            <ol style="list-style-type:decimal-leading-zero; padding: 5px 30px;">
-                                <!-- ★☆ -->
-                                <h4> Singles </h4>
-
-                                <li>☆ From Me to You (11/02/1963)</li>
-
-                                <li>☆ Ain’t She Sweet (29/05/1964)</li>
-
-                                <li>★ Day Tripper (03/12/1965) </li>
-
-                                <li>★ Paperback Writer (10/06/1966)</li>
-
-                                <li>★ Lady Madonna (15/05/1968)</li>
-
-                                <li>★ Hey Jude (30/07/1968)</li>
-
-                                <li>☆ The Ballad of John and Yoko (30/10/1969)</li> 
-
-                                <li>★ Free as a Bird (04/12/1995)</li> 
-
-                                <li>★ Real Love (04/03/1996)</li> </br>
-
-                                <h4> Cover songs </h4>
-
-                                <li>★ Besame Mucho</li>
-
-                                <li>★ Three Cool Cats</li>
-
-                                <li>★ Pretty woman</li>
-                            </ol>
+                        <input type="checkbox" id="expand-album15" class="read-more-check">
+                        <label for="expand-album15" class="read-more-label">Տեսնել ավելին</label>
+                        <div class="more-content">
+                            <div class="album-content">
+                                <ol style="list-style-type:decimal-leading-zero; padding: 5px 30px;">
+                                    <h4> Singles </h4>
+                                    <li>☆ From Me to You (11/02/1963)</li>
+                                    <li>☆ Ain’t She Sweet (29/05/1964)</li>
+                                    <li>★ Day Tripper (03/12/1965) </li>
+                                    <li>★ Paperback Writer (10/06/1966)</li>
+                                    <li>★ Lady Madonna (15/05/1968)</li>
+                                    <li>★ Hey Jude (30/07/1968)</li>
+                                    <li>☆ The Ballad of John and Yoko (30/10/1969)</li> 
+                                    <li>★ Free as a Bird (04/12/1995)</li> 
+                                    <li>★ Real Love (04/03/1996)</li> </br>
+                                    <h4> Cover songs </h4>
+                                    <li>★ Besame Mucho</li>
+                                    <li>★ Three Cool Cats</li>
+                                    <li>★ Pretty woman</li>
+                                </ol>
+                            </div>
                         </div>
-                        <!-- <a href="">Լսել երգերը</a> -->
                     </div>
                 </div>
             </div>
         </div>
+
         <!-- films section -->
         <div class="films-section">
             <div id="filmagrafia" style="height: 70px;"></div>
@@ -595,54 +621,10 @@
     </div>
 
     <!-- Footer ----------------------------------------------------------------------- -->
-
     <div class="footer">
-        <div class="footer-upper">
-            <p>Մեր մասին</p>
-            <div class="container">
-                <div class="footer-links">
-                    <h4>Բաժանորդագրվել </h4>
-                    <ol>
-                        <a href="https://www.instagram.com/eriikvardanyan/?hl=ru" target="_blank">
-                            <li> Instagram </li>
-                        </a> </br>
-                        <a href="https://www.facebook.com/ErikVardanyan301" target="_blank">
-                            <li> Facebook </li>
-                        </a> </br>
-                        <a href="https://github.com/VardanyanErik" target="_blank">
-                            <li> GitHub </li>
-                        </a>
-                    </ol>
-                </div>
-                <div class="footer-links">
-                    <h4>Մենք 🗺</h4>
-                    <ol>
-                        <a href="https://hy.wikipedia.org/wiki/%D5%80%D5%A1%D5%B5%D5%A1%D5%BD%D5%BF%D5%A1%D5%B6"
-                            target="_blank">
-                            <li> Հայաստան </li>
-                        </a> </br>
-                        <a href="https://hy.wikipedia.org/wiki/%D4%B5%D6%80%D6%87%D5%A1%D5%B6" target="_blank">
-                            <li> Երևան </li>
-                        </a>
-                    </ol>
-                </div>
-                <div class="footer-links">
-                    <h4>The Beatles</h4>
-                    <ol>
-                        <a href="https://hy.wikipedia.org/wiki/The_Beatles" target="_blank">
-                            <li> Wikipedia </li>
-                        </a> </br>
-                        <a href="https://www.thebeatles.com/" target="_blank">
-                            <li> The Beatles </li>
-                        </a>
-                    </ol>
-                </div>
-            </div>
-        </div>
         <div class="footer-lower" id="aboutus">
-            <p>COPYRIGHT © ERIKVARDANYAN 2023</p>
+            <p>© Website by <a href="https://eriikvardanyan.github.io/myportfolio/" target="_blank" style="color: white; text-decoration: underline;">Erik Vardanyan</a> 2023.</p>
         </div>
     </div>
 </body>
-
 </html>
